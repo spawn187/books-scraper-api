@@ -4,7 +4,7 @@ provider "aws" {
 
 # Tűzfal beállítások: Engedélyezzük a 8000-es portot az API-nak és a 22-est az SSH-nak
 resource "aws_security_group" "api_sg" {
-  name        = "books_api_sg"
+  name        = "books_api_sg_v2"
   description = "Allow HTTP and SSH traffic"
 
   ingress {
